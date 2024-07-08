@@ -18,6 +18,10 @@ class BaseFlutterWindow: NSObject {
     super.init()
   }
 
+  var isVisible: Bool {
+    return window.isVisible
+  }
+
   func show() {
     window.makeKeyAndOrderFront(nil)
     NSApp.activate(ignoringOtherApps: true)
